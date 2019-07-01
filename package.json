@@ -51,7 +51,7 @@
       "git add"
     ]
   },
-  "name": "luftdaten-server",
+  "name": "luftdaten-site",
   "prettier": "@ffflorian/prettier-config",
   "private": true,
   "scripts": {
