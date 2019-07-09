@@ -23,7 +23,7 @@ class Temperature extends React.PureComponent<Props, State> {
     entryDisabled: true,
   };
 
-  componentDidMount() {
+  componentDidMount(): Promise<void> {
     return fetch(`http://localhost:21080/data/temperature/?limit=1000`)
       .then(response => response.json())
       .then(jsonData => {
@@ -39,7 +39,7 @@ class Temperature extends React.PureComponent<Props, State> {
       });
   }
 
-  render() {
+  render(): JSX.Element {
     console.log('this.state.entryDisabled', this.state.entryDisabled);
     return (
       <div>
