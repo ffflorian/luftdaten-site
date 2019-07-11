@@ -23,24 +23,21 @@ class Temperature extends React.PureComponent<Props, State> {
     entryDisabled: true,
   };
 
-  componentDidMount(): Promise<void> {
-    return fetch(`http://localhost:21080/data/temperature/?limit=1000`)
-      .then(response => response.json())
-      .then(jsonData => {
-        const mappedData = jsonData.map((entry: {created_at: string; temperature: string}) => {
-          const {created_at, temperature} = entry;
-          return [new Date(created_at), temperature];
-        });
-        const data = this.state.data.concat(mappedData);
-        this.setState({
-          data,
-          entryDisabled: false,
-        });
-      });
+  async componentDidMount(): Promise<void> {
+    const response = await fetch(`http://localhost:21080/data/temperature/?limit=1000`);
+    const jsonData = await response.json();
+    const mappedData = jsonData.map((entry: {created_at: string; temperature: string}) => [
+      new Date(entry.created_at),
+      entry.temperature,
+    ]);
+    const data = this.state.data.concat(mappedData);
+    this.setState({
+      data,
+      entryDisabled: false,
+    });
   }
 
   render(): JSX.Element {
-    console.log('this.state.entryDisabled', this.state.entryDisabled);
     return (
       <div>
         <h3 className="s-title">Temperature</h3>

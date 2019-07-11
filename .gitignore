@@ -3,3 +3,4 @@ dist/
 *.log
 *.sqlite
 .passwd
+src/react-app-env.d.ts
