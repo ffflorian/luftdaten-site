@@ -1,17 +1,38 @@
 import React from 'react';
 
-const Entries = () => {
-  return (
-    <div>
-      <h3 className="s-title">Last 20 entries</h3>
-      <div id="chart_sds_p1" style={{width: '900px', height: '500px'}}></div>
-      <div style={{textAlign: 'center'}}>
-        <label htmlFor="entries">Show</label>
-        <input type="number" min="2" max="10000" id="entries" value="300" disabled />
-        <label htmlFor="entries">entries</label>
-      </div>
-    </div>
-  );
-};
+type Props = React.HTMLProps<Document>;
 
-export default Entries;
+interface State {
+  data: Array<string | Date | number>;
+}
+
+class Humidity extends React.PureComponent<Props, State> {
+  state: State = {
+    data: [],
+  };
+
+  async componentDidMount(): Promise<void> {
+    const response = await fetch(`http://localhost:21080/data/latest/?limit=20`);
+    const jsonData = await response.json();
+    const data = this.state.data.concat(jsonData);
+    this.setState({
+      data,
+    });
+  }
+
+  render(): JSX.Element {
+    return (
+      <div>
+        <h3 className="s-title">Last 20 entries</h3>
+        <table className="table table-striped table-scroll table-hover" id="entries">
+          <thead>
+            <tr></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    );
+  }
+}
+
+export default Humidity;

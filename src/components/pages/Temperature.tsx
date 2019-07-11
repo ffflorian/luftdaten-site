@@ -9,17 +9,19 @@ interface State {
   data: Array<Array<string | Date | number>>;
 }
 
+const dataType = 'Temperature';
+
 const options: ChartWrapperOptions['options'] = {
   chartArea: {left: 100},
   height: 500,
-  title: 'Temperature in the last 24 hours',
+  title: `${dataType} in the last 24 hours`,
   vAxis: {format: '## °C'},
   width: 900,
 };
 
 class Temperature extends React.PureComponent<Props, State> {
   state: State = {
-    data: [['date', 'temperature']],
+    data: [['date', dataType]],
     entryDisabled: true,
   };
 
@@ -40,7 +42,7 @@ class Temperature extends React.PureComponent<Props, State> {
   render(): JSX.Element {
     return (
       <div>
-        <h3 className="s-title">Temperature</h3>
+        <h3 className="s-title">{dataType}</h3>
         <Chart
           chartType="LineChart"
           data={this.state.data}
