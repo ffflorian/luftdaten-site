@@ -5,8 +5,8 @@ import {ChartWrapperOptions} from 'react-google-charts/dist/types';
 type Props = React.HTMLProps<Document>;
 
 interface State {
-  entryDisabled?: boolean;
   data: Array<Array<string | Date | number>>;
+  entryDisabled?: boolean;
 }
 
 const dataType = 'Humidity';
