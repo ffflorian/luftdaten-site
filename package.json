@@ -11,7 +11,7 @@
     "@material-ui/icons": "4.5.1",
     "mdi-material-ui": "6.8.0",
     "react": "16.10.2",
-    "react-dom": "16.10.2",
+    "react-dom": "16.11.0",
     "react-google-charts": "^3.0.15",
     "react-router": "^5.1.2"
   },
