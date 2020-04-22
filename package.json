@@ -24,7 +24,7 @@
     "@types/react-dom": "16.9.6",
     "@types/react-router": "5.1.5",
     "husky": "4.2.5",
-    "lint-staged": "10.1.6",
+    "lint-staged": "10.1.7",
     "prettier": "2.0.4",
     "prop-types": "15.7.2",
     "react-scripts": "3.4.1",
