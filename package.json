@@ -16,7 +16,7 @@
     "react-router": "^5.2.0"
   },
   "devDependencies": {
-    "@ffflorian/prettier-config": "0.0.6",
+    "@ffflorian/prettier-config": "0.1.0",
     "@ffflorian/tslint-config": "0.7.1",
     "@types/jest": "26.0.3",
     "@types/node": "~14",
