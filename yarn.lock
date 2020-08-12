@@ -1697,10 +1697,10 @@
   resolved "https://registry.npmjs.org/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
-"@ffflorian/prettier-config@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.1.1.tgz#ccaf7f9aaed7e0b37c2f612c35b3327c19ee9525"
-  integrity sha512-kqPJzPlJSWZNISCPmp5URbe57jDQN97o43y1fC3KPk0Lcj0CXWNWmg3EuT+D3d+Er8tSBmEe08fSJqTmkFibNg==
+"@ffflorian/prettier-config@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.1.2.tgz#d0a45f0ad666f4f1d741a6b17e1320a0306f4ed9"
+  integrity sha512-QphlsqI6Mr+cmn5jaii/68/DuNceQEoZmCcvHTkA130cKWmLhuWZIk8Xj70sT10A3v/WegZ8r7bpkgobDzd44g==
 
 "@ffflorian/tslint-config@0.7.1":
   version "0.7.1"
