@@ -1,4 +1,4 @@
-# luftdaten-site [![Build Status](https://github.com/ffflorian/luftdaten-site/workflows/Build/badge.svg)](https://github.com/ffflorian/luftdaten-site/actions/) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=ffflorian/luftdaten-site)](https://dependabot.com)
+# luftdaten-site [![Build Status](https://github.com/ffflorian/luftdaten-site/workflows/Build/badge.svg)](https://github.com/ffflorian/luftdaten-site/actions/)
 
 Display the data from your [luftdaten](https://luftdaten.info) device.
 
