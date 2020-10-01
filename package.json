@@ -54,6 +54,7 @@
   "name": "luftdaten-site",
   "prettier": "@ffflorian/prettier-config",
   "private": true,
+  "repository": "https://github.com/ffflorian/luftdaten-site.git",
   "scripts": {
     "build:site": "react-scripts build",
     "clear": "rimraf build",
