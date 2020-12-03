@@ -18,7 +18,7 @@
   "devDependencies": {
     "@ffflorian/prettier-config": "0.1.2",
     "@ffflorian/tslint-config": "0.7.1",
-    "@types/jest": "26.0.15",
+    "@types/jest": "26.0.16",
     "@types/node": "~14",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
