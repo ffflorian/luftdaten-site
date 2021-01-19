@@ -4,3 +4,4 @@ dist/
 *.sqlite
 .passwd
 src/react-app-env.d.ts
+.eslintcache
