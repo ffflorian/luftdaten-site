@@ -37,11 +37,6 @@
   "engines": {
     "node": ">= 8.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "license": "GPL-3.0",
   "lint-staged": {
     "*.{json,md,css}": [
